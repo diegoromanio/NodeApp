@@ -15,7 +15,7 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo “Esse é o meu pipeline ADICIONE SEU NÚMERO DE MATRÍCULA AQUI”
+      - run: echo “Esse é o meu pipeline 942130068”
 
     runs-on: ubuntu-latest
 
