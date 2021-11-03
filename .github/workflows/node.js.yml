@@ -11,6 +11,12 @@ on:
 
 jobs:
   build:
+
+    - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+    - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+    - run: echo "🍏 This job's status is ${{ job.status }}."
+    - run: echo "Esse é o meu pipeline 942130068"
       
     runs-on: ubuntu-latest
 
@@ -26,11 +32,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 #        cache: 'npm'
-    - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-    - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-    - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-    - run: echo "🍏 This job's status is ${{ job.status }}."
-    - run: echo "Esse é o meu pipeline 942130068"
     - run: npm ci
     - run: npm run build --if-present
 #    - run: npm test
